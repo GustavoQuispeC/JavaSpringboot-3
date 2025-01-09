@@ -37,4 +37,20 @@ public class Medico {
     public Medico() {
     }
 
+    //Lombok no esta trabajando bien con record
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Especialidad getEspecialidad() {
+        return especialidad;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
