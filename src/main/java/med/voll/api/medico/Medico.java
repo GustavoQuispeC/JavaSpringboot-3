@@ -38,6 +38,10 @@ public class Medico {
     }
 
     //Lombok no esta trabajando bien con record
+
+    public Long getId() {
+        return id;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -52,5 +56,19 @@ public class Medico {
 
     public String getEmail() {
         return email;
+    }
+
+
+    public void actualizarDatos(DatosActualizarMedico datosActualizarMedico) {
+        if(datosActualizarMedico.nombre()!= null){
+            this.nombre = datosActualizarMedico.nombre();
+        }
+        if(datosActualizarMedico.documento()!= null){
+            this.documento = datosActualizarMedico.documento();
+        }
+       if (datosActualizarMedico.direccion() != null){
+              this.direccion = direccion.actualizarDatos(datosActualizarMedico.direccion());
+       }
+
     }
 }
