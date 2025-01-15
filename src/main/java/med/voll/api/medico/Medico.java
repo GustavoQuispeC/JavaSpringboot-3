@@ -60,6 +60,17 @@ public class Medico {
         return email;
     }
 
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
 
     public void actualizarDatos(DatosActualizarMedico datosActualizarMedico) {
         if(datosActualizarMedico.nombre()!= null){
